@@ -1,0 +1,2 @@
+# IkenaiUploaderBOT
+Discordに投げられたファイルをGoogleドライブにぶち込むBOT
