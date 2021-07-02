@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group 'red.felnull'
+version '1.0'
+
+repositories {
+    mavenCentral()
+    maven {
+        name 'm2-dv8tion'
+        url 'https://m2.dv8tion.net/releases'
+    }
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+
+    implementation 'com.google.code.gson:gson:2.8.7'
+    implementation 'com.google.api-client:google-api-client:1.32.1'
+    implementation 'com.google.oauth-client:google-oauth-client-jetty:1.31.5'
+    implementation 'com.google.apis:google-api-services-drive:v3-rev197-1.25.0'
+    implementation 'net.dv8tion:JDA:4.3.0_290'
+}
+
+test {
+    useJUnitPlatform()
+}
